@@ -9,6 +9,7 @@ app.on('ready', () => {
 
 ipcMain.on('videosubmitted', (event, path) => {
 	ffmpeg.ffprobe(path, (err, metadata) => {
-		console.log('Length: '+metadata.format.duration)
+		console.log('alkjsdfl;askjdf;alkjsdf;lkasj')
+		console.log(require('util').inspect(metadata, false, null))
 	})
 })
